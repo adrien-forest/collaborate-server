@@ -24,13 +24,13 @@ describe('Poll Service', () => {
     after(() => {
         try {
             fs.unlinkSync(DBPath);
-        } catch (e) { }
+        } catch (e) {}
     });
 
     describe('Empty database', () => {
         it('should return an empty list', async () => {
             const polls = await pollService.getAll();
-            expect(polls).to.to.a('array');
+            expect(polls).to.be.a('array');
             expect(polls).to.have.lengthOf(0);
         });
 
