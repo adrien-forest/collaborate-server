@@ -1,0 +1,32 @@
+{
+  "name": "collaborate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha tests/**/*.js",
+    "start": "nodemon server.js"
+  },
+  "author": "Adrien Forest",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^6.1.4",
+    "nodemon": "^1.19.1",
+    "proxyquire": "^2.1.1"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-jwt": "^5.3.1",
+    "express-unless": "^0.5.0",
+    "http": "0.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "nedb": "^1.8.0",
+    "rootpath": "^0.1.2",
+    "socket.io": "^2.2.0"
+  }
+}
